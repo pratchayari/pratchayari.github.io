@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pratchaya Ritta ClassRooms</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css"
-    integrity="your-integrity-code" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css" integrity="your-integrity-code" crossorigin="anonymous" />
+    <script src="jscript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-
+    <button onclick="scrollToTop()" id="scroll-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>Top
+    </button>
     <header>
         <div class="container">
             <br>
@@ -24,7 +27,7 @@
             <div class="containernav">
                <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#projects">My ClassRooms</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
 
@@ -38,23 +41,66 @@
             Welcome to my portfolio! I am a passionate web developer with expertise in HTML, CSS, and JavaScript.
             This is the place where I showcase my skills and projects.
         </p>
-
-        <!-- Add a button to view projects -->
-        <button onclick="window.location.href='https://github.com/pratchayari'" class="button">View Projects</button>
+    <div class="containernav">      
+            <ul>
+                <li>
+                    <a href="https://github.com/pratchayari" target="_blank" class="social" aria-label="Github" title="Github">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/kobann.ritta" target="_blank" class="social" aria-label="Facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook"></i> Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@aokisawa" target="_blank" class="social" aria-label="Youtube" title="Youtube">
+                        <i class="fa-brands fa-youtube"></i> Youtube
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="social" aria-label="Line" title="Line">
+                        <i class="fa-brands fa-line"></i> Line
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="social" aria-label="E-Mail" title="E-Mail">
+                        <i class="fa-regular fa-envelope"></i> E-Mail
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="social" aria-label="Instagram" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="social" aria-label="Discord" title="Discord">
+                        <i class="fa-brands fa-discord"></i> Discord
+                    </a>
+                </li>
+            </ul>
+    </div>
+        
     </section>
 
     <section id="projects" class="container">
         
-        <h2>My Projects</h2>
+        <h2>My ClassRooms</h2>
 
         <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
+            <h3>BasicCSS</h3>
+            <p>เนื้อหาเกี่ยวกับการใช้งาน CSS Cascading Style Sheets เบื้องต้น ผู้เรียนไม่ต้องมีศึกษาควรมีพื้นฐานภาษา HTML เป็นส่วนหนึ่งของเนื้อหาวิชา 30901-1002 กำรออกแบบและพัฒนำเว็บไซต์ (Website Development and Design) 1-4-3 </p>
+            <div class="right-aligned-button"><button>Click me</button></div>
         </div>
 
         <div class="project">
             <h3>Project 2</h3>
             <p>Description of Project 2.</p>
+        </div>
+
+        <div class="project">
+            <h3>Project 3</h3>
+            <p>Description of Project 3.</p>
         </div>
 
         <!-- Add more projects as needed -->
@@ -65,20 +111,8 @@
         
         <h2>Contact Me</h2>
 
-        <div class="containernav">      
-            <ul>
-                <li>
-                    <a href="https://github.com/manuelernestog" target="_blank" class="social" aria-label="Github" title="Github">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/manuelernestog" target="_blank" class="social" aria-label="Github" title="Github">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
+     <!-- Add a button to view projects -->
+     <button onclick="window.location.href='https://github.com/pratchayari'" class="button">View Projects</button>
     
     </section>
 
