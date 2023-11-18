@@ -5,67 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1,
-        h2,
-        h3 {
-            color: #333;
-        }
-
-        p {
-            line-height: 1.6;
-            color: #666;
-        }
-
-        .project {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
-        }
-
-        .project:last-child {
-            border-bottom: none;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="your-integrity-code" crossorigin="anonymous" />
 </head>
 
 <body>
 
     <header>
-        <h1>Your Name</h1>
-        <p>Web Developer</p>
+        <div class="container">
+            <br>
+            <h1>Your Name</h1>
+            <p>Web Developer</p>
+        </div>
     </header>
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <div class="container">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
 
-    <section>
+            </div>
+        </nav>
+
+    <section id="about" class="container">
+        <br>
         <h2>About Me</h2>
         <p>
-            Write a brief introduction about yourself, your skills, and your passion for web development.
+            Welcome to my portfolio! I am a passionate web developer with expertise in HTML, CSS, and JavaScript.
+            This is the place where I showcase my skills and projects.
         </p>
+
+        <!-- Add a button to view projects -->
+        <button onclick="location.href='#projects'">View Projects</button>
     </section>
 
-    <section>
+    <section id="projects" class="container">
+        <br>
         <h2>My Projects</h2>
 
         <div class="project">
@@ -82,12 +62,26 @@
 
     </section>
 
-    <section>
+    <section id="contact" class="container">
+        <br>
         <h2>Contact Me</h2>
-        <p>Email: your@email.com</p>
-        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+
+        <div class="social-links">
+
+            <!-- Add your social media links with icons here -->
+            <a id="social" href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a id="social" href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            <a id="social" href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
         <!-- Add more contact information as needed -->
     </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 PracthayaRitta Portfolio. All rights reserved.</p>
+        </div>
+        
+    </footer>
 
 </body>
 
