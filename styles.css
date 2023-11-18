@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@600&family=Maitree:wght@300&family=IBM+Plex+Sans+Thai:wght@500&display=swap');
+
 body {
+
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -35,21 +38,26 @@ section {
 
 h1 {
     color: #f4f4f4;
+    font-family: 'IBM Plex Sans Thai';
 }
 h2,
 h3 {
     color: #333;
+    font-family: 'Anuphan', sans-serif;
+    
 }
 
 p {
     line-height: 1.6;
     color: #666;
+    font-family: 'Maitree', serif;
 }
 
 .project {
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
+    padding-bottom: 4em;
+    
 }
 
 .project:last-child {
@@ -72,11 +80,32 @@ button {
     border: none; /* Remove border */
     border-radius: 3px; /* Rounded corners */
     cursor: pointer; /* Add a pointer cursor on hover */
+    font-family: 'IBM Plex Sans Thai';
 }
 
 button:hover {
     background-color: #ddd; 
     color: black;
+    font-family: 'IBM Plex Sans Thai';
+}
+.left-aligned-button {
+    background-color: transparent; /* กำหนดพื้นหลังเป็น透明 */
+    border: none; /* กำหนดเส้นขอบเป็น none เพื่อลบเส้นขอบ */
+    padding: 10px 20px; /* กำหนดระยะห่างขอบของปุ่ม */
+    margin: 0; /* ลบ margin ที่เป็นค่า default */
+    font-size: 16px;
+    color: #333; /* กำหนดสีข้อความ */
+    cursor: pointer;
+}
+.right-aligned-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    float: right;    
 }
 /* Add these styles to your existing styles.css file */
 
@@ -106,6 +135,7 @@ ul {
 
 li {
     float: left;
+    font-family: 'IBM Plex Sans Thai';
 }
 
 a {
@@ -137,3 +167,25 @@ a.social:hover {
     margin-right: 5px;
 
 }
+      /* Your existing styles */
+        /* Add or modify these styles in your existing styles.css file */
+
+        /* Scroll-to-top button styles */
+        #scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            color: #818181; /* Adjust color as needed */
+            background: none;
+            border: 1px solid #818181; /* Border color */
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            transition: color 0.3s ease, border-color 0.3s ease; /* Add smooth transition */
+        }
+
+        #scroll-to-top:hover {
+            color: #000000; /* Hover color */
+            border-color: #000000; /* Hover border color */
+        }
